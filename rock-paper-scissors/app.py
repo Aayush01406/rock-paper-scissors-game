@@ -90,8 +90,6 @@ def determine_winner(p1, c1, p2, c2):
         return {'winner': p2, 'message': f'{p2} wins the round!'}
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True, allow_unsafe_werkzeug=True)
-if __name__ == '__main__':
     import os
     port = int(os.environ.get('PORT', 8000))
     socketio.run(app, host='0.0.0.0', port=port)
